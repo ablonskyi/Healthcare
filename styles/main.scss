@@ -1,0 +1,38 @@
+@import "reset";
+@import "bootstrap";
+
+body{
+  background-image: url("../images/body/Desktop.png");
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: black;
+}
+.container{
+  max-width: 1200px;
+  box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6{
+  font-weight: 500;
+}
+
+.button {
+  background: #40A3F8;
+  border-radius: 5px;
+  color: #FFFFFF;
+  &:hover{
+    background: linear-gradient(133.16deg, rgba(154, 208, 255, 0.1065) 0%, rgba(111, 188, 255, 0.1005) 112.21%);
+    box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.07);
+    color: #40A3F8;
+  }
+}
+a{
+  text-decoration: none;
+  transition: 0.5s;
+  &:hover{
+    color: #40A3F8;
+    text-decoration: none;
+  }
+}
+
+@import "header";

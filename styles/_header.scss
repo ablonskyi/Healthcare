@@ -1,0 +1,50 @@
+@mixin max-screen($res) {
+  @media screen and (max-width: $res) {
+    @content;
+  }
+}
+header{
+  padding-top: 50px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;;
+  li{
+    margin-left: 51px;
+    a{
+      color: #6E5F5F;
+    }
+    .button{
+      padding: 14px 28px 12px;
+    }
+  }
+}
+@include max-screen(991px){
+    .logo{
+      z-index: 3;
+    }
+    button{
+      z-index: 200;
+    }
+    .collapse{
+      position: relative;
+      display: flex;
+      transition: 0.5s;
+      .navbar-nav{
+        position: fixed;
+        align-items: center;
+        height: 100vh;
+        width: 100vw;
+        margin: auto;
+        justify-content: space-around;
+        right: 0;
+        top: 0;
+        background: linear-gradient(133.16deg, rgba(154, 208, 255, 0.1065) 0%, rgba(111, 188, 255, 0.1005) 112.21%);
+        box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.07);
+        color: #40A3F8;
+      }
+    }
+  }
+
+
